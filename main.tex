@@ -1,0 +1,118 @@
+\documentclass[10pt, a4paper, technote, draftclsnofoot,onecolumn ]{IEEEtran}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{pgfgantt}
+\usepackage[
+backend=biber,
+style=numeric,
+sorting=ynt
+]{biblatex}
+
+\title{\huge Design Document: Draft 2}
+\author{Ziyad Abdullah M Alghanmi, Inez Hernandez Fuerte, Eliza Nip, Chasen Yamashita}
+
+\begin{document}
+
+\input{titlepage.tex}
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+
+Our team will be delivering an updated version of Sidewalk Talk’s main website. Our focus is improving the site’s usability, by streamlining navigation and making the pages presentable. We plan to produce wireframes and mockups of the site, before actualizing it within WordPress. If possible, we want to integrate Ontraport into the site to provide special content to volunteers and members of Sidewalk Talk. 
+
+\section{Scope}
+
+\subsection{Design Methodology}
+
+A simple Waterfall method of development will be utilized for our project. We chose a linear design process for building the website, rather than an iterative or circular design, due to the time constraints and resources we have. Our finished product may be able to be built on by other contributors to Sidewalk Talk. 
+The waterfall model also puts an emphasis on documentation. Rather than multiple iterations with less documentation, we will be focusing on implementing a single basis for the new website. This is important to our project, as we want the site’s design to be able to be replicated and easily referable for future web developers. By delivering a structured, easy-to-follow approach, we will have clear milestones to reach by certain dates.
+
+
+\subsection{Communication}
+During the design phase (winter term), we plan to deliver weekly progress reports every Monday. Group meetings will be done on Thursday evenings, outside of other meetings to complete certain aspects of the design.
+
+
+\subsection{Assumptions}
+Some assumptions on what our client wanted delivered were made. 
+\begin{itemize}
+
+\item We will assume that our clients primarily want us to lead the direction of our site’s appearance and design. We will be generating our prototypes will feedback only received when we contact our client. We should be able to justify our design choices through understanding good usability.
+\item We will assume that primarily, our client wants us to design a functional display site as priority over a membership site for volunteers. Given the limited time and scope of our project, creating a working, simpler model than requested would be more satisfactory than a half-working larger model of the new website.
+\item We will assume that the client wants the site to be easy to maintain, as their organization has very little experience and resources to hire dedicated maintenance. 
+\item We will assume that once the site is handed over to the client, they will be able to easily modify it to their needs. 
+\end{itemize}
+
+
+
+
+\section{Roles and Aspects of Design}
+\textit {Front end UI/UX, wireframing, moodboards, prototypes and client contact/feedback (Inez, Eliza), Web development, SEO & plugins, Waterfall (Chasen), Database (Zee)}
+
+\subsection{Front End: Moodboards for Client Feedback}
+
+Moodboarding/wireframing with Balsamiq for getting a feel for the general layout or tweeks we want to make to the site. We will be able to create black and white wireframes of the site to send to the client for feedback on the look and design. Balsamiq allows for quick wireframing and for creating simple mood boards, thus we can ensure that we are providing the client with rough mockups that will give them an idea of where different elements of the site will be placed. 
+
+Elements include text, header tabs, footers, etc. Balsamiq comes loaded with premade button icons, header elements, and the option to enter text elements as well. The main idea with using software like Balsamiq for moodboarding is to help us, the team developing the site, and the client be on the same page of the general barebones of the site without having to invest many hours in a design concept that the client might not want. Simple wireframing like this ensures that we are including the client and going through that client feedback process to the best of our abilities.
+
+If the client chooses to participate and give us feedback on the moodboards, once we have reached a level where both the team and client are satisfied with the level of completion we have set up a general color scheme for the site, generalized where the main images and texts will appear, the positioning of the headers and footers, and the positioning of the tabs and menus. Though the buttons and text will be generic the moodboard will allow us to have a good sense of direction and a good starting point for the site as a whole. We will then start the high fidelity wireframing in which the client will be able to click through mockup screens and provide feedback.
+
+
+\subsection{Front End: Wireframing & Prototypes for client feedback}
+
+Once we have created our mockups we can start creating a high fidelity prototype version of the website. Using InVision/Figma we can create high fidelity prototypes that we can collaborate on as a whole team. The added advantage to using software like InVision or Figma is that it is cloud based and easily shareable with the client. Given that our client is less tech savvy these software platforms are also rather user friendly and offer a way for them to click through our prototypes as if it were a live website. 
+
+The benefit to these software programs is that we can reduce the amount of time we spend on the backend creating the site and risking having the client be dissatisfied with the design once all the backend work has been completed. As they review these wireframes the client is able to add notes directly to the prototypes and give us feedback on the design. This will be another way we ensure that the client is kept involved in the design process, if they so choose to be involved.
+
+
+
+\subsection{Back-end: Hosting and Database Management}
+
+Developing a website has many layers which need to be integrated together in a cohesive manner. The integration would consist of front-end, back-end, and database for our project. The majority of the tasks will overlap to some point. In general, I may focus on integrating the current website from the template blog lookalike to an actual CMS.
+
+WordPress will be used as a CMS. This will occur by downloading the WordPress and transferring it to the server using FTP, which will serve as the basic skeleton of the database of the website. This step will require having a web hosting service which will be provided by the client’s team.
+ 
+MySQL will be used as a relational management system for the database. It will include working with PHP to integrate the database to work cohesively together. It will help us as a team to interact with the database.
+ 
+Creating the website after the integration might need additional plug-ins to be installed. Those will be installed in the future after determining the client's needs. Thus, will guarantee a database to start the web development process of the client’s website. 
+
+
+
+\subsection{Backend: UI for Client Usage}
+
+Wordpress’s backend is user-friendly, further facilitated by Divi’s theme editor Drag-and-drop capabilities provide an easier interface for the staff of Sidewalk Talk to use. An Admin dashboard is provided, where an admin can look at site statistics, manage content, and perform maintenance.
+
+In the role of Backend Management, we would generally set up the website to be operable by any individual with basic tech knowledge. One would also provide various template pages for administration to implement themselves. These would assist foreign chapters of our client’s organization, as they would be able to write and customize their own pages, rather than translate the English branch’s website.
+
+Traci Ruble, founder of Sidewalk Talk, would need to be able to familiarize themselves with Wordpress’ blogging functions. Separate from the more concrete “pages” of the website, a “blog” area would be needed to publish upcoming news and info.
+
+Several plugins would require implementation, such as PilotPress, Donorbox, Import Eventbrite Events, an SEO plugin, and a streamlined Contact form plugin. Other webapps Sidewalk Talk uses that are not supported on Wordpress may require embeds or “widgets”, which are self-contained User Interface pieces of code. These differ from plugins, which are pieces of software providing a variety of functions. This would include InkBright, or possibly Eventbrite (when embedding single schedule events). As a team, we may look into implementing more plugins-- handling caching to speed up loading times, integrating social media such as Twitter or Youtube, a mapping plugin to show where all chapters are located, and a backup service to preserve site content in case of an outage.
+
+Research may need to be conducted to see if all plugins have high integrity or have a history of conflicting with others. Checking whether plugin updates have caused conflicts can itself be automated through something such as Plugin Detective.  
+
+\section{Timeline}
+
+\textbf{Winter Term:}
+\begin{itemize}
+\item Start low-fi prototypes of each page on website by Week 3. Confirming with client, implementing any changes requested (Approx 2 weeks). 
+\item High-fi prototypes will be done by Week 10.
+\item Continue developing documentation throughout the term as each prototype gets created. Update documentation with new information and requests from our client.
+\end{itemize}
+\textbf{Spring Term:}
+\begin{itemize}
+\item Begin implementation of High-fi prototypes to Wordpress site, done by Week 3. 
+\item Begin Walkthroughs, testing from Week 3 to Week 5. Seek individuals from various demographics to understand how they interact with the site, compared to the older version.
+\item In Week 5 - Week 7, Finalize product.
+\end{itemize}
+
+
+
+\section{Conclusion}
+
+By the Spring term, we will hope to have a selection of work to provide to our client. We will have documentation on our process in producing the site, the markups and prototypes of our page designs, the layout and structure of the new website, and ensuring that it is functional and credible in representing our client. As a team, we will not only fulfill the needs of our own roles, but collaborate and assist each other during the prototyping and development processes. 
+
+\end{document}
+
